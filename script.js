@@ -10,12 +10,12 @@ for(let i = 0; i < SIZE; i++){
         div.classList.add('break');
     }
     else {
-        div.classList.add('grid');
+        div.classList.add('default');
     }
     container.appendChild(div);
 }
 
-const sketchBox = document.querySelectorAll('.grid');
+const sketchBox = document.querySelectorAll('.default');
 sketchBox.forEach(sketchBox => sketchBox.addEventListener('mouseover', function(e) {
     this.classList.add('mousedOver');
 }));
