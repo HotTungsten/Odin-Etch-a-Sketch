@@ -12,8 +12,8 @@ function createGrid(gridSize){
         }
         else {
             div.classList.add('default');
-            div.style.height = 300/gridSize + 'px';
-            div.style.width = 300/gridSize + 'px';
+            div.style.height = 600/gridSize + 'px';
+            div.style.width = 600/gridSize + 'px';
         }
         gridBox.appendChild(div);
     }
