@@ -15,7 +15,14 @@ for(let i = 0; i < SIZE; i++){
     container.appendChild(div);
 }
 
+//colors grid when moused over
 const sketchBox = document.querySelectorAll('.default');
 sketchBox.forEach(sketchBox => sketchBox.addEventListener('mouseover', function(e) {
     this.classList.add('mousedOver');
 }));
+
+//removes color from all the boxes
+const resetButton = document.querySelector('.reset');
+resetButton.addEventListener('click', function(){
+    sketchBox.forEach(sketchBox => sketchBox.classList.remove("mousedOver"));
+});
