@@ -37,7 +37,7 @@ resetButton.addEventListener('click', function(){
     let gridPrompt;
     do {
         gridPrompt = parseInt(prompt("Please enter new grid dimensions (max 100): "), 10);
-    }while(isNaN(gridPrompt) || gridPrompt > 100);
+    }while(isNaN(gridPrompt) || gridPrompt > 100 || gridPrompt < 1);
 
     //recreates grid with sketching enabled
     createGrid(gridPrompt);
