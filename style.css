@@ -3,6 +3,10 @@ body {
 }
 
 .container {
+    text-align: center;
+}
+
+.gridBox {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
